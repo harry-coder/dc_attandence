@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/loginwrap">
+
+ <Button
+        android:id="@+id/backpage_id"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        style="@style/inhead">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:background="@drawable/login_logo"
+            style="@style/inhead_ico"/>
+        <com.dcnine_attendance.CustomTextView
+            style="@style/inhead_ttl"
+            android:text="Log In"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:theme="@style/TextLabelGen"
+        style="@style/input_fieldset">
+        <com.dcnine_attendance.CustomTextInput
+            android:id="@+id/enter_code_id"
+            android:hint="User Code"
+            android:maxLength="10"
+            android:text="0123456789"
+            android:inputType="number"
+            android:numeric="integer"
+            style="@style/input_gen"/>
+    </RelativeLayout>
+    <com.dcnine_attendance.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter PIN"
+        android:layout_marginBottom="10dp"
+        android:textColor="#333"/>
+     <FrameLayout
+        style="@style/pin_input_fieldset">
+        <LinearLayout
+            android:id="@+id/sixbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <View
+                style="@style/login_viewblock"/>
+            <View
+                style="@style/login_viewblock"/>
+            <View
+                style="@style/login_viewblock"/>
+            <View
+                style="@style/login_viewblock"/>
+            <View
+                style="@style/login_viewblock"/>
+            <View
+                style="@style/login_viewblock"/>
+        </LinearLayout>
+        <com.dcnine_attendance.CustomTextInput
+            android:id="@+id/enter_pin_id"
+            android:maxLength="6"
+            android:inputType="number"
+            android:numeric="integer"
+            style="@style/input_gen_login"
+            />
+    </FrameLayout>
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/button_id"
+        style="@style/btn_submit" />
+</LinearLayout>
+

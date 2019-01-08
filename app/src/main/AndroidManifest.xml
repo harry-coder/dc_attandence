@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dcnine_attendance">
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+    <application
+
+        android:usesCleartextTraffic="true"
+        android:name="com.dcnine_attendance.attendance_module.GlobalClass"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/pmc_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.dcnine_attendance.authentication.Authentication"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dcnine_attendance.selfiecamera.MainActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.dcnine_attendance.selfiecamera.MainActivity_OUT"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.dcnine_attendance.selfiecamera.MainActivity_OD"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.dcnine_attendance.selfiecamera.CameraActivity"
+            android:label="@string/title_activity_camera"></activity>
+
+
+        <activity
+            android:name="com.dcnine_attendance.authentication.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.dcnine_attendance.Home_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.dcnine_attendance.login_module.Login_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.dcnine_attendance.login_module.LogOut_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.dcnine_attendance.attendance_module.Attendance_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.dcnine_attendance.login_module.Login_Activity1"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- <activity  android:name=".site_inspection_module.Report_Activity" />-->
+        <activity
+            android:name="com.dcnine_attendance.attendance_module.SignatureActivity"
+            android:label="@string/app_name">
+
+        </activity>
+
+        <activity
+            android:name="com.dcnine_attendance.attendance_module.Signature_ODActivity"
+            android:label="@string/app_name">
+
+        </activity>
+
+        <activity
+            android:name="com.dcnine_attendance.attendance_module.Signature_OUTActivity"
+            android:label="@string/app_name">
+
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB6PN7LVfGTJZLJPeSb9YpDx1n4fD_3s6U" />
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <service android:name="com.dcnine_attendance.service.CaptureService">
+
+        </service>
+        <service android:name=".service.GeoFenceTransitionService" />
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+
+</manifest>

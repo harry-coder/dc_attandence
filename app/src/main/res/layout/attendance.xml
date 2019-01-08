@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ece1d0"
+        android:fillViewport="false">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/page_body"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/backpageId2"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="13dp"
+                android:background="@android:color/transparent" />
+
+            <LinearLayout style="@style/inhead">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    style="@style/inhead_ico"
+                    android:background="@drawable/attendance_logo" />
+
+                <com.dcnine_attendance.CustomTextView
+                    style="@style/inhead_ttl"
+                    android:text="Attendance" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/punchholder">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <FrameLayout style="@style/punchframe">
+
+                        <ImageButton
+                            android:id="@+id/punch_in"
+                            style="@style/punchin" />
+
+                        <com.dcnine_attendance.CustomTextView
+                            style="@style/punchtext"
+                            android:text="Touch to start your day at Office"></com.dcnine_attendance.CustomTextView>
+                    </FrameLayout>
+
+                    <FrameLayout style="@style/punchframe">
+
+                        <ImageButton
+                            android:id="@+id/punch_od"
+                            style="@style/punchin"
+                            android:background="@drawable/touchod" />
+
+                        <com.dcnine_attendance.CustomTextView
+                            style="@style/punchtext"
+                            android:text="Touch to start your day, if you are not in office(OD)"></com.dcnine_attendance.CustomTextView>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <FrameLayout style="@style/punchframe">
+
+                    <ImageButton
+                        android:id="@+id/punch_out"
+                        style="@style/punchout" />
+
+                    <com.dcnine_attendance.CustomTextView
+                        style="@style/punchtext"
+                        android:text="Touch to End your day"></com.dcnine_attendance.CustomTextView>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/pending_holder"
+                    style="@style/button_frame"
+                    android:layout_width="120dp"
+                    android:layout_height="105dp"
+                    android:visibility="gone">
+
+                    <com.dcnine_attendance.CustomTextButton
+                        android:id="@+id/pending"
+                        style="@style/btn_frm_btn"
+                        android:background="@drawable/btn_frm_btnbg2"
+                        android:paddingTop="0dp"
+                        android:text="Click to Upload Pending Data" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!-- <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="pending"
+                 android:id="@+id/pending"
+                 android:layout_alignParentTop="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_od"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ece1d0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="20dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <com.dcnine_attendance.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Place"
+                    android:textColor="#333"
+                    android:textSize="16dp" />
+
+                <com.dcnine_attendance.CustomTextInput
+                    android:id="@+id/ed_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edittextstyle"
+                    android:gravity="top"
+                    android:hint="Type here"
+                    android:padding="5dp"
+                    android:textSize="12dp" />
+
+                <com.dcnine_attendance.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Reason of OD"
+                    android:textColor="#333"
+                    android:textSize="16dp" />
+
+                <com.dcnine_attendance.CustomTextInput
+                    android:id="@+id/ed_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/edittextstyle"
+                    android:gravity="top"
+                    android:hint="Type here"
+                    android:padding="5dp"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <com.dcnine_attendance.CustomTextButton
+                        android:id="@+id/punch_cnl"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:background="#B7A5CC"
+                        android:text="Cancel"
+                        android:visibility="gone" />
+
+                    <com.dcnine_attendance.CustomTextButton
+                        android:id="@+id/punch_yes"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#A9D1C6"
+                        android:text="Punch In" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/map"
+        layout="@layout/map_layout" />
+
+
+
+   <!-- <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/map"
+        app:layout_anchorGravity="end"
+        app:fabSize="normal"
+        android:layout_marginEnd="30dp"
+        />-->
+
+
+
+</android.support.design.widget.CoordinatorLayout>

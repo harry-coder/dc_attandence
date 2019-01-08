@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "452605247331",
+    "project_id": "attendance-1356"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452605247331:android:f6a6c6cd68f70384",
+        "android_client_info": {
+          "package_name": "com.attendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452605247331-jlcjvgs6ium4ne58g3nnljffn08ea4h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-SvPaVm6BdAHgZuT8dmSTJC_3NklBlPE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452605247331:android:584dcb49ef70c9b2",
+        "android_client_info": {
+          "package_name": "com.dcnine_attendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452605247331-jlcjvgs6ium4ne58g3nnljffn08ea4h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-SvPaVm6BdAHgZuT8dmSTJC_3NklBlPE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

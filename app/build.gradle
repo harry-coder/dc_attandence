@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.2"
+
+
+    defaultConfig {
+        applicationId "com.dcnine_attendance"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.3"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+50696
+
+
+/// use
+
+//// no need of ibc or bsc screen
+
+//// middle name last name
+
+//address mismatch
+
+///// ticket n0. in feasibility also....
+
+/// tranformer name ... code nd capacity...
+
+//load in kilowaat
+
+
+///adj  customerlimit to 10
+
+///adj mru unit not found...
+
+////
+
+//show hint in distance....
+
+//// click for address proof photo
+
+//select land rent visibility
+
+///
+
+//// check for meter serial number if in stock...
+
+/// who is installing the meter ...
+
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.pnikosis:materialish-progress:1.5'
+
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    implementation 'com.android.support:design:28.0.0'
+
+    implementation 'com.instabug.library:instabug:8.0.11'
+    /*compile fileTree(dir: 'libs', include: ['*.jar'])
+             compile 'com.android.support:appcompat-v7:22.2.1'
+             compile 'com.android.support:design:22.2.1'*/
+    implementation files('src/main/java/httpcore.jar')
+    implementation files('src/main/java/httpclient-4.2.3.jar')
+}
+
+//apply plugin: 'com.google.gms.google-services'

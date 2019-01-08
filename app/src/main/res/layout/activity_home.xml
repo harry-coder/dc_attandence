@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Home_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main_picture" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/tabsection"
+        android:layout_weight=".497">
+
+        <LinearLayout
+            style="@style/tabsectionin">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/tabsectionrow"
+                    android:weightSum="1">
+                    <FrameLayout
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        style="@style/tabsframe">
+                        <LinearLayout
+                            style="@style/tabslin">
+                            <View
+                                style="@style/tabsinview"/>
+                            <ImageView
+                                style="@style/tabsico"
+                                android:src="@drawable/hmico_downl" />
+                            <com.dcnine_attendance.CustomTextView
+                                android:text="Download"
+                                style="@style/tabslabel"/>
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/logpage_id"
+                            style="@style/hmBtn"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_weight="1"
+                        style="@style/tabsframe">
+                        <LinearLayout
+                            style="@style/tabslin">
+                            <View
+                                style="@style/tabsinview"/>
+                            <RelativeLayout
+                                style="@style/tabsico">
+                                <ImageView
+                                    style="@style/tabsico_img"
+                                    android:src="@drawable/attendance_button" />
+                            </RelativeLayout>
+                            <com.dcnine_attendance.CustomTextView
+                                android:text="Attendance"
+                                style="@style/tabslabel"/>
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/attendanceid1"
+                            style="@style/hmBtn"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        style="@style/tabsframe">
+                        <LinearLayout
+                            style="@style/tabslin">
+                            <View
+                                style="@style/tabsinview"/>
+                            <RelativeLayout
+                                style="@style/tabsico">
+                                <ImageView
+                                    style="@style/tabsico_img"
+                                    android:src="@drawable/material_issued_button" />
+                            </RelativeLayout>
+                            <com.dcnine_attendance.CustomTextView
+                                android:text="Material Mgmt"
+                                style="@style/tabslabel"/>
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/material_id"
+                            style="@style/hmBtn"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        style="@style/tabsframe">
+                        <LinearLayout
+                            style="@style/tabslin">
+                            <View
+                                style="@style/tabsinview"/>
+                            <ImageView
+                                style="@style/tabsico"
+                                android:src="@drawable/open_gen_purchase_button" />
+                            <com.dcnine_attendance.CustomTextView
+                                android:text="Open Gen. Purchase"
+                                style="@style/tabslabel"/>
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/survayid1"
+                            style="@style/hmBtn"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/tabsectionrow"
+                    android:weightSum="2">
+                    <FrameLayout
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        style="@style/tabsframe">
+                        <LinearLayout
+                            style="@style/tabslin">
+                            <View
+                                style="@style/tabsinview"/>
+                            <ImageView
+                                style="@style/tabsico"
+                                android:src="@drawable/factory_insp_button" />
+                            <com.dcnine_attendance.CustomTextView
+                                android:text="Factory Insp."
+                                style="@style/tabslabel"/>
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/factory_inspection_id"
+                            style="@style/hmBtn"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        style="@style/tabsframe">
+                        <LinearLayout
+                            style="@style/tabslin">
+                            <View
+                                style="@style/tabsinview"/>
+                            <ImageView
+                                style="@style/tabsico"
+                                android:src="@drawable/receiving_insp_button" />
+                            <com.dcnine_attendance.CustomTextView
+                                android:text="Receiving Insp."
+                                style="@style/tabslabel"/>
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/receiving_insp_id"
+                            style="@style/hmBtn"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        style="@style/tabsframe">
+                        <LinearLayout
+                            style="@style/tabslin">
+                            <View
+                                style="@style/tabsinview"/>
+                            <RelativeLayout
+                                style="@style/tabsico">
+                                <ImageView
+                                    style="@style/tabsico_img"
+                                    android:src="@drawable/site_inspection_button" />
+                            </RelativeLayout>
+                            <com.dcnine_attendance.CustomTextView
+                                android:text="Site Inspection"
+                                style="@style/tabslabel"/>
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/siteinspectionid"
+                            style="@style/hmBtn"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        style="@style/tabsframe">
+                        <LinearLayout
+                            style="@style/tabslin">
+                            <View
+                                style="@style/tabsinview"/>
+                            <RelativeLayout
+                                style="@style/tabsico">
+                                <ImageView
+                                    style="@style/tabsico_img"
+                                    android:src="@drawable/ncr_button" />
+                            </RelativeLayout>
+                            <com.dcnine_attendance.CustomTextView
+                                android:text="Issues"
+                                style="@style/tabslabel"/>
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/issueid"
+                            style="@style/hmBtn"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/tabsectionrow"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        style="@style/tabsframe">
+                        <LinearLayout
+                            style="@style/tabslin">
+                            <View
+                                style="@style/tabsinview"/>
+                            <ImageView
+                                style="@style/tabsico"
+                                android:src="@drawable/workprogress1" />
+                            <com.dcnine_attendance.CustomTextView
+                                android:text="Work Progress"
+                                style="@style/tabslabel"/>
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/workprogid"
+                            style="@style/hmBtn"/>
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
